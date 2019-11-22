@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <ul>
+    <li (click)="onNavigate('home')"><a>Home</a></li>
+    <li (click)="onNavigate('about')"><a>About</a></li>
+    <!-- <div *ngIf="listState && listNo === 0" class="sub-nav-list">
+      <ul>
+        <li routerLink="/about"><a>About Us</a></li>
+        <li routerLink="/objectives"><a>Mission & Objectives</a></li>
+      </ul>
+    </div> -->
+    <li (click)="onNavigate('education')"><a>Education & Training </a></li>
+    <li (click)="onAddOption(0)">
+      <a>News & Events <i class="fa fa-plus" aria-hidden="true"></i></a>
+    </li>
+    <div *ngIf="listState && listNo === 0" class="sub-nav-list">
+      <ul>
+        <li (click)="onNavigate('recent')"><a>Recent Events</a></li>
+        <!-- <li><a aria-disabled="true">Upcoming Events</a></li> -->
+      </ul>
+    </div>
+    <li (click)="onAddOption(1)">
+      <a>Get Involve <i class="fa fa-plus" aria-hidden="true"></i></a>
+    </li>
+    <div *ngIf="listState && listNo === 1" class="sub-nav-list">
+      <ul>
+        <li (click)="onNavigate('overview')"><a>Overview</a></li>
+        <li (click)="onNavigate('members')"><a>Member</a></li>
+        <li (click)="onNavigate('amba')"><a>Campus Ambassador</a></li>
+        <li (click)="onNavigate('officer')"><a>Ethiccraft Executive Officer </a></li>
+      </ul>
+    </div>
+    <li class="btn-box"><a routerLink="/joinus">JOIN US</a></li>
+    <li class="btn-box">
+      <a href="https://panel.udgaar.in/web/#/donation" target="_blank"
+        >DONATE</a>
+    </li>
+  </ul>
+</div>

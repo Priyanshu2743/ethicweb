@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+  background-color: black;
+}
+
+.wrapper ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.wrapper > ul li {
+  list-style: none;
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+.wrapper > ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper > ul li:hover {
+  background-color: #3a3333 !important;
+}
+.fa-plus {
+  position: absolute;
+  right: 10%;
+}
+
+.btn-box {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 10%;
+}
+.btn-box a {
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #0db496;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 2px 2px 6px 1px #0db496;
+}

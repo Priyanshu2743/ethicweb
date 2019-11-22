@@ -1,0 +1,50 @@
+.container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  font-family: barlow;
+  text-align: justify;
+}
+.ca-heading h3 {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500 !important;
+  text-decoration: none;
+}
+.ca-heading h3 span {
+  color: #0cb496;
+}
+.ca-heading h3:after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #c4c4c4;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.ca-sub p {
+  font-size: 22px;
+}
+.ca-p {
+  font-size: 17px;
+}
+.ca-p span {
+  font-size: 19px;
+  font-weight: 700px !important;
+}
+.ca-join-btn {
+  background-color: #0cb496;
+  border: solid 3px #0cb496;
+  margin: 50px 0;
+  font-size: 24px;
+}
+.ca-join-btn:hover {
+  background-color: #0cb496;
+  border: solid 3px #0cb496;
+}

@@ -1,0 +1,44 @@
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin:0 auto;
+  }
+  
+   td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2;}
+  
+ tr:hover {background-color: #ddd;}
+  
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0db496;
+    color: white;
+  }
+
+  .fa-file-excel-o
+  {
+  font-size:30px;
+  color:blue;
+  }
+
+.wrapup
+{
+  position: relative;
+}
+.mybtn
+{
+  position: absolute;
+  top:25px;
+  right:25px;
+  background-color: #0db496 !important;
+  outline:none !important;
+  cursor: pointer;
+  border:none !important;
+}

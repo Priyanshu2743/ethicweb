@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: barlow;
+}
+
+section {
+  /* background-image: url("/assets/img/whyjoin/network.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+#center-line {
+  position: absolute;
+  left: 50%;
+  border-left: 4px solid #0cb496;
+  height: 0%;
+  transition: 0.5s;
+}
+.heading-animation {
+  text-align: center;
+  margin: 0;
+}
+.heading-animation {
+  font-size: 30px;
+  font-family: barlow;
+  font-weight: bold;
+  position: relative;
+}
+.heading-animation span {
+  color: #0cb496;
+}
+
+.heading-animation :after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #c4c4c4;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.container-wrapper {
+  padding: 2% 8%;
+}
+.container {
+  position: relative;
+  color: teal;
+  width: 100%;
+  max-width: 1340px;
+  min-height: 500px;
+}
+
+.container > div {
+  position: absolute;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.bottomright {
+  bottom: 0;
+  right: 0;
+}
+.topright {
+  top: 0;
+  right: 0;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-delay: 0.5s;
+  transition: 1s;
+  opacity: 0;
+  scale: 0;
+}
+
+.img-wrapper {
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.img-wrapper > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.feature {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+.round-top-left {
+  border-bottom-left-radius: 50px;
+}
+
+.round-top-right {
+  border-bottom-right-radius: 50px;
+}
+
+.round-bottom-left {
+  border-top-left-radius: 50px;
+}
+
+.round-bottom-right {
+  border-top-right-radius: 50px;
+}
+
+.feature-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.stats-h1 {
+  display: block;
+  color: #0db496;
+  font-size: 40px;
+  font-family: barlow;
+  font-weight: bold;
+}
+
+.text-left {
+  padding-left: 18px;
+  text-align: left;
+}
+.donate {
+  color: white;
+  text-decoration: none;
+}
+.text-right {
+  padding-right: 8px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.stats-h2 {
+  display: block;
+  color: #383737;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: barlow;
+  margin-top: -15px;
+}
+
+.circle {
+  border: solid 1px #c2ece4;
+  padding: 23px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.main-img {
+  width: 300px;
+  height: 300px;
+}
+
+.main-img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1000px;
+  background-color: #0cb496;
+}
+.btn-center {
+  padding-left: 37%;
+}
+.btn1 {
+  color: #0cb496 !important;
+  background-color: white !important;
+  border: solid 2px #0cb496 !important;
+  margin-right: 10px !important;
+}
+.btn2 {
+  color: white !important;
+  background-color: #0cb496 !important;
+  border: solid 2px #0cb496 !important;
+  margin-right: 10px !important;
+}
+.btn-why {
+  padding: 12px 50px !important;
+  font-size: 18px !important;
+  line-height: 1.3333333;
+  border-radius: 30px !important;
+  font-family: barlow !important;
+  font-weight: bold !important;
+}
+/*.container-wrapper {
+    background-image: url(../img/network.png);
+  }*/
+@media only screen and (max-width: 900px) {
+  .container > div {
+    position: static;
+    padding: 20px;
+  }
+  .center {
+    transform: translate(0%, 0%);
+  }
+  .main-img {
+    width: 100%;
+    height: auto;
+  }
+  .btn-center {
+    padding-left: 25%;
+  }
+  .circle {
+    padding: 23px;
+    margin: 7px;
+  }
+  .main-img > img {
+    border-radius: 50%;
+  }
+  .btn-why {
+    margin-top: 20px;
+  }
+}

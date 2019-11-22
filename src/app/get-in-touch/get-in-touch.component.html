@@ -1,0 +1,131 @@
+<section class="GetIntouch-bg">
+  <div class="container">
+    <div class="GetIntouch-heading">
+      <h2 id="getintoucch-getin-color" [ngsReveal]="getin">
+        <span id="GetIntouch-heading-color">GET IN </span>TOUCH
+      </h2>
+      <p id="mline"></p>
+      <h4
+        class="getIntouch-address-heading question-heading"
+        [ngsReveal]="question"
+      >
+        Have a question for us ?
+      </h4>
+    </div>
+    <div class="row GetIntouch-content">
+      <div class="col-sm-12 col-md-6" [ngsReveal]="animAddress">
+        <div class="row GetIntouch-address">
+          <!-- <div class="col-sm-4 ">
+            <p class="getIntouch-address-heading">
+              Operating Hours :
+            </p>
+          </div> -->
+          <!-- <div class="col-sm-7" id="open-time">
+            Monday to Saturday 10.00 am to 10.00 pm <br />Sunday 12.00 am to 6
+            pm. <br />Closed on public holidays.<br />
+          </div> -->
+          <div class="col-sm-4">
+            <p class="getIntouch-address-heading">Address :</p>
+          </div>
+          <div class="col-sm-5">
+            <p>47 D/3, First Floor, Jia Sarai, Delhi – 110016.</p>
+          </div>
+          <div class="col-sm-4">
+            <p class="getIntouch-address-heading">Mobile :</p>
+          </div>
+          <div class="col-sm-5"><p>+91 931-986-6696</p></div>
+          <div class="col-sm-4">
+            <p class="getIntouch-address-heading">Email :</p>
+          </div>
+          <div class="col-sm-5"><p>ethiccraftclub@gmail.com</p></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6" [ngsReveal]="animForm">
+        <form (ngSubmit)="onFormSubmit()" class="get-from" #f="ngForm">
+          <div class="form-row">
+            <div class="form-group col-md-6 fix1">
+              <label for="inputEmail4"
+                ><span style="color:#d83d3d;font-size:14px;">*</span>Name</label
+              >
+              <input
+                type="text"
+                class="form-control get-name"
+                placeholder="First Name"
+                name="fname"
+                ngModel
+                required
+                #fname="ngModel"
+              />
+            </div>
+            <div class="form-group col-md-6 fix2">
+              <label for="inputPassword4">Surname</label>
+              <input
+                type="text"
+                class="form-control get-name"
+                placeholder="Last Name"
+                name="lname"
+                ngModel
+              />
+            </div>
+          </div>
+          <span *ngIf="fname.invalid && fname.touched" class="help-block"
+            >Please! Enter your name</span
+          >
+          <div class="form-group">
+            <label for="inputAddress"
+              ><span style="color:#d83d3d;font-size:18px;">*</span>Email</label
+            >
+            <input
+              type="email"
+              class="form-control get-name"
+              placeholder="Email"
+              name="email"
+              ngModel
+              email
+              required
+              #email="ngModel"
+            />
+          </div>
+          <span *ngIf="email.invalid && email.touched" class="help-block"
+            >Please! Enter a valid email</span
+          >
+          <div class="form-group">
+            <label for="inputAddress2"
+              ><span style="color:#d83d3d;font-size:18px;">*</span
+              >Contact</label
+            >
+            <input
+              type="tel"
+              pattern="[0-9]{10}"
+              class="form-control get-name"
+              placeholder="Contact"
+              name="contact"
+              ngModel
+              required
+              #phone="ngModel"
+            />
+          </div>
+          <span *ngIf="phone.invalid && phone.touched" class="help-block"
+            >Please! Enter a valid phone number</span
+          >
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"> Message</label>
+            <textarea
+              class="form-control get-name"
+              rows="3"
+              name="comment"
+              ngModel
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg btn-block btn-block1"
+            [disabled]="!(f.valid && f.touched)"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,101 @@
+* {
+  font-family: barlow;
+}
+.container {
+  width: 100% !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.intro-get-p {
+  text-align: justify;
+  font-size: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.member-benifits {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+.member-benifits h3 {
+  text-decoration-line: underline;
+}
+.member-benifits p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.card-div {
+  width: 29.99%;
+  float: left;
+  padding: 0 8px;
+  margin: 50px 13px;
+  /* background-color: #ccc; */
+}
+.card-div img {
+  width: 100%;
+}
+.card-div p {
+  /* text-align: center; */
+  margin: 0 10px;
+  text-align: justify;
+  font-size: 18px;
+}
+.card-div button {
+  text-align: center;
+  margin: 10px auto;
+  background-color: #0cb496;
+  border: solid 2px #0cb496;
+}
+.card-div h3 {
+  text-align: center;
+}
+.get-heading {
+  text-align: center;
+  position: relative;
+}
+.get-heading span {
+  color: #0cb496;
+}
+/* .card-div {
+  height: 200px;
+  max-width: 450px;
+}
+.card-div img {
+  height: 100%;
+  width: 100%;
+} */
+.get-heading:after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #c4c4c4;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media (max-width: 880px) {
+  .card-div {
+    width: 49%;
+    float: left;
+    padding: 0 8px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+  }
+}
+@media (max-width: 576px) {
+  .member-benifits h3 {
+    font-size: 20px;
+  }
+  .card-div {
+    width: 98%;
+    float: left;
+    padding: 0 8px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+  }
+}

@@ -1,0 +1,220 @@
+<section class="form-box">
+  <div class="container">
+    <div class="shade">
+      <div class="blackboard">
+        <div class="intro-box">
+          <h3>ETHICCRAFT EXECUTIVE MEMBER FORM</h3>
+        </div>
+        <div class="form">
+          <form [formGroup]="joinForm" (ngSubmit)="onFormSubmit()">
+            <div class="col-lg-6 col-sm-6 input-box">
+              <label><span>*</span>First Name: </label>
+              <input type="text" formControlName="fname" />
+              <span
+                class="help-block"
+                *ngIf="
+                  joinForm.get('fname').invalid && joinForm.get('fname').touched
+                "
+                >This field can not be empty</span
+              >
+            </div>
+            <div class="col-lg-6 col-sm-6 input-box">
+              <label>Last Name: </label>
+              <input type="text" formControlName="lname" />
+            </div>
+            <!-- <div class="col-lg-12 select-box">
+                                              <select name="Gender">
+                                                      <option value="volvo">Gender</option>
+                                                      <option value="volvo">Male</option>
+                                                      <option value="saab">Female</option>
+                                                      <option value="fiat">Other</option>
+                                                    </select>
+                                      </div> -->
+            <div class="col-lg-12 input-box">
+              <label><span>*</span>Contact: </label>
+              <input type="tel" pattern="[0-9]{10}" formControlName="contact" />
+              <span
+                *ngIf="
+                  joinForm.get('contact').invalid &&
+                  joinForm.get('contact').touched
+                "
+                class="help-block"
+                >Field Can't be empty, or string other than 10 digit phone
+                no</span
+              >
+            </div>
+
+            <div class="col-lg-12 input-box">
+              <label><span>*</span>Email: </label>
+              <input type="email" name="email" formControlName="email" />
+              <span
+                class="help-block"
+                *ngIf="
+                  joinForm.get('email').invalid && joinForm.get('email').touched
+                "
+                >Should be a valid email address</span
+              >
+            </div>
+            <div class="col-lg-6 col-sm-6 select-box">
+              <label for="cName"><span>*</span>College Name</label>
+              <select id="cName" name="collegeName" formControlName="college">
+                <option value="ABES">ABES
+                </option>
+                <option value="AKGEC">AKGEC</option>
+                <option value="Ambedkar (DU)">Ambedkar (DU)</option>
+                <option value="Apex Institute of Technology">Apex Institute of Technology</option>
+                <option value="Aryabhatta College">Aryabhatta College</option>
+                <option value="Aurobindo">Aurobindo College</option>
+                <option value="Aurobindo college (evening )">Aurobindo college (evening )</option>
+                <option value="Bennett University">Bennett University</option>
+                <option value="Bhaskaracharya College">Bhaskaracharya College</option>
+                <option value="CPJ College of Law( IP)">CPJ College of Law( IP)</option>
+                <option value="Dindayal Upadhayaya College, University of Delhi">Dindayal Upadhayaya College, University of Delhi</option>
+                <option value="DITE">DITE</option>
+                <option value="DME Law college">DME Law college</option>
+                <option value="DPG institute of technology and management">DPG institute of technology and management</option>
+                <option value="Dr. Akhilesh Das Gupta Institute of Technology and Management">Dr. Akhilesh Das Gupta Institute of Technology and Management</option>
+                <option value="DTU">DTU</option>
+                <option value="Dyal Singh college(E)">Dyal Singh college(E)</option>
+                <option value="G.B PANT GOVT ENGINEERING COLLEGE">G.B PANT GOVT ENGINEERING COLLEGE</option>
+                <option value="G.B Pant Inst, of technolgy - GBPIT">G.B Pant Inst, of technolgy - GBPIT</option>
+                <option value="GL Bajaj">GL Bajaj</option>
+                <option value="Govind Ballabh Pant University of Agriculture & Technology">Govind Ballabh Pant University of Agriculture & Technology</option>
+                <option value="HITECH">HITECH</option>
+                <option value="Ideal Institute of Tech">Ideal Institute of Tech</option>
+                <option value="IIHMR, Dwarka">IIHMR, Dwarka</option>
+                <option value="IIMM">IIMM</option>
+                <option value="IIT BHU">IIT BHU</option>
+                <option value="IIT Delhi">IIT Delhi</option>
+                <option value="IIT Mandi">IIT Mandi</option>
+                <option value="INMANTEC">INMANTEC</option>
+                <option value="Institute of Chemical Technology, Mumbai">Institute of Chemical Technology, Mumbai</option>
+                <option value="IPEC">IPEC</option>
+                <option value="IPEM Law College">IPEM Law College</option>
+                <option value="ITS">ITS</option>
+                <option value="Jaipuria School of Business">Jaipuria School of Business</option>
+                <option value="KIET">KIET</option>
+                <option value="Kirori mal college">Kirori mal college</option>
+                <option value="L.D. College of Engineering">L.D. College of Engineering</option>
+                <option value="Lal Bahadur Shastri Institute of Management,Delhi">Lal Bahadur Shastri Institute of Management,Delhi</option>
+                <option value="LPU">LPU</option>
+                <option value="Maharaja Surajmal Institute">Maharaja Surajmal Institute</option>
+                <option value="Maharaja Surajmal Institute of Technology">Maharaja Surajmal Institute of Technology</option>
+                <option value="Maulana Azad college">Maulana Azad college</option>
+                <option value="Nalanda University">Nalanda University</option>
+                <option value="NIT - Delhi">NIT - Delhi</option>
+                <option value="NIT Patna">NIT Patna</option>
+                <option value="NITRA">NITRA</option>
+                <option value="PGDAV evening College">PGDAV evening College</option>
+                <option value="PGDAV Morning">PGDAV Morning</option>
+                <option value="Punjab University">Punjab University</option>
+                <option value="Ramjas">Ramjas</option>
+                <option value="RKGIT">RKGIT</option>
+                <option value="Rudrapur Institute of Tecnology">Rudrapur Institute of Tecnology</option>
+                <option value="Sam Hingginbottom University of Agriculture of Science and Technology">Sam Hingginbottom University of Agriculture of Science and Technology</option>
+                <option value="Satyavati College(M)">Satyavati College(M)</option>
+                <option value="Shaheed Bhagat Singh college">Shaheed Bhagat Singh college</option>
+                <option value="Shyama Prasad Mukherjee College">Shyama Prasad Mukherjee College</option>
+                <option value="South Asian Univ">South Asian Univ</option>
+                <option value="Sri Ram Bhartiya Kala Kendra">Sri Ram Bhartiya Kala Kendra</option>
+                <option value="Sri Venkateswara college">Sri Venkateswara college</option>
+                <option value="Sunderdeep college">Sunderdeep college</option>
+                <option value="Vaishno College of Engineering">Vaishno College of Engineering</option>
+                <option value="VIPS(IP)">VIPS(IP)</option>
+                <option value="World Institute of Technology, WIT College">World Institute of Technology, WIT College</option>
+                <option value="YMCA University of Science and Technology">YMCA University of Science and Technology</option>
+              </select>
+              <span
+                class="help-block"
+                *ngIf="
+                  joinForm.get('college').invalid &&
+                  joinForm.get('college').touched
+                "
+                >This field can not be empty</span
+              >
+            </div>
+            <div class="col-lg-6 col-sm-6 input-box">
+              <label><span>*</span>Member ID: </label>
+              <input
+                type="tel"
+                pattern="[0-9]{4}"
+                placeholder="1234"
+                formControlName="memberId"
+              />
+              <span
+                class="help-block"
+                *ngIf="
+                  joinForm.get('memberId').invalid &&
+                  joinForm.get('memberId').touched
+                "
+                >This field can not be empty, or a string other than 4 digit
+                number</span
+              >
+            </div>
+            <!-- <div class="col-lg-6 col-sm-6 select-box">
+                                              <select name="Course Name">
+                                                      <option value="volvo">Course Name</option>
+                                                      <option value="volvo">Male</option>
+                                                      <option value="saab">Female</option>
+                                                      <option value="fiat">Other</option>
+                                                    </select>
+                                      </div> -->
+            <!-- <div class="col-lg-12 select-box">
+                                              <select name="Course Year">
+                                                      <option value="volvo">Course Year</option>
+                                                      <option value="volvo">Male</option>
+                                                      <option value="saab">Female</option>
+                                                      <option value="fiat">Other</option>
+                                                    </select>
+                                      </div> -->
+            <div class="col-lg-12 textarea-box">
+              <label>Reason to become CA</label>
+              <textarea formControlName="reason"></textarea>
+            </div>
+            <!-- <div class="col-lg-12 select-box">
+                                              <select name="Course Year">
+                                                      <option value="volvo">State</option>
+                                                      <option value="volvo">Male</option>
+                                                      <option value="saab">Female</option>
+                                                      <option value="fiat">Other</option>
+                                                    </select>
+                                      </div> -->
+            <!-- <div class="col-lg-12 select-box">
+                                              <select name="Course Year">
+                                                      <option value="volvo">City</option>
+                                                      <option value="volvo">Male</option>
+                                                      <option value="saab">Female</option>
+                                                      <option value="fiat">Other</option>
+                                                    </select>
+                                      </div> -->
+
+            <div class="col-lg-12 textarea-box">
+              <label>Contribution as Member </label>
+              <textarea formControlName="contribution"></textarea>
+            </div>
+            <div class="col-lg-12 textarea-box">
+              <label>Any Refrence From College </label>
+              <textarea formControlName="reference"></textarea>
+            </div>
+            <!-- <div class="col-lg-12 textarea-box">
+                                              <label>Inspiration for Joining Ethicxraft Club: </label>
+                                              <textarea></textarea>
+                                      </div> -->
+
+            <!-- <div class="col-lg-12 wipeout">
+                                              <button type="submit" value="send">Upload Photo</button>
+                                      </div> -->
+            <div class="col-lg-12 wipeout">
+              <button
+                type="submit"
+                [disabled]="!(joinForm.valid && joinForm.touched)"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

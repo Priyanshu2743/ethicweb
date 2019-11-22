@@ -1,0 +1,143 @@
+* {
+  font-family: barlow;
+}
+.close-btn {
+  position: absolute;
+  left: 89%;
+  top: 120px;
+}
+.close-btn a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 23px;
+  cursor: pointer;
+}
+.sectionmodal {
+  width: 100%;
+  padding-top: 100px;
+  background-color: #0eb592;
+}
+.container {
+  width: 100% !important;
+  max-width: 1340px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  background-color: #0eb592;
+}
+
+.img-box {
+  position: absolute;
+  top: -100px;
+  left: 180px;
+  width: 300px;
+  height: 225px;
+  z-index: 1;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.modal1 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: white;
+}
+p {
+  padding: 10px 0;
+  font-size: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#p1 {
+  padding-top: 9px;
+}
+h1 {
+  font-size: 22px;
+  text-align: center;
+  text-align: right;
+  padding-right: 29px;
+  /* top: 74px; */
+  padding-top: 23vh;
+}
+
+.img-carousel {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+.img-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* Large devices (desktops, 992px and 1199.98) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .img-box {
+    left: 100px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .img-box {
+    left: 100px;
+  }
+  .h1 {
+    padding-top: 14vh;
+  }
+}
+/* small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .img-box {
+    position: absolute;
+    top: -100px;
+    left: 45px;
+    width: 200px;
+    height: 180px;
+    z-index: 1;
+  }
+  #p1 {
+    padding-top: 20px;
+  }
+  .h1 {
+    padding-top: 14vh;
+  }
+}
+/* Extra small devices (tablets, 576px and down) */
+@media (max-width: 575.98px) {
+  .img-box {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 120px;
+    height: 100px;
+    z-index: 1;
+  }
+  p {
+    padding: 10px 0;
+    font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    padding-right: 0px;
+    font-size: 25px;
+  }
+  #p1 {
+    padding-top: 0px;
+  }
+  .h1 {
+    padding-top: 8vh !important;
+  }
+}

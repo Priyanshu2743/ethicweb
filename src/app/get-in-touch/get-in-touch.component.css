@@ -1,0 +1,132 @@
+.container {
+  width: 100% !important;
+  max-width: 1340px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.get-name {
+  background: transparent;
+  border-radius: 0;
+  padding: 0 10px;
+  /* border: 1px solid #fff; */
+  color: white;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+.GetIntouch-bg {
+  background-image: url("/assets/img/get.jpg");
+
+  padding: 3% 0;
+  background-position: center;
+}
+.GetIntouch-heading {
+  text-align: center;
+  font-weight: 700;
+}
+#GetIntouch-heading-color {
+  color: #0eb592;
+}
+.get-from {
+  font-family: barlow;
+}
+.GetIntouch-content {
+  /* margin-top: 2px; */
+  font-weight: 500;
+  color: white;
+  padding: 0 8%;
+}
+.btn-block1 {
+  background-color: #0eb592;
+  color: #fff;
+  border-radius: 0;
+  border-color: #0eb592;
+  font-weight: bold;
+  padding: 3px 10px;
+}
+.btn-block1:hover {
+  background-color: #0eb592;
+}
+.GetIntouch-address {
+  padding-top: 60px;
+}
+.getIntouch-address-heading {
+  color: #0cb496;
+  font-weight: bold;
+  font-family: barlow;
+}
+.GetIntouch-heading h2 {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: barlow;
+}
+.col-sm-5 p {
+  color: white;
+  font-weight: bold;
+  font-family: barlow;
+}
+
+#getintoucch-getin-color {
+  color: white;
+}
+#open-time {
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: barlow;
+}
+#getintoucch-getin-color:after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #c4c4c4;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.question-heading {
+  margin: 26px 0 !important;
+  font-style: italic;
+  font-weight: bold;
+  font-family: barlow;
+}
+.fix1 {
+  padding-left: 0 !important;
+}
+
+.fix2 {
+  padding-right: 0 !important;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 993px) {
+  .fix1 {
+    padding-right: 0 !important;
+  }
+  .fix2 {
+    padding-left: 0 !important;
+  }
+}

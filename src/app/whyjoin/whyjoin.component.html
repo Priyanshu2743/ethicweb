@@ -1,0 +1,82 @@
+<section>
+  <h1 class="heading-animation" [ngsReveal]="start">
+    OUR<span class="line"> REACH</span>
+  </h1>
+  <div class="container-wrapper">
+    <div class="container">
+      <div id="center-line" [ngStyle]="{ height: vlength() }"></div>
+      <div class="top left" [ngsReveal]="lefttop">
+        <div class="feature round-top-left round-bottom-right">
+          <div class="img-wrapper">
+            <img src="assets/img/whyjoin/Img1.jpg" />
+          </div>
+
+          <div class="feature-text text-left">
+            <span class="stats-h1">500</span>
+            <span class="stats-h2">Members</span>
+          </div>
+        </div>
+      </div>
+      <div class="topright" [ngsReveal]="righttop">
+        <div class="feature round-top-right round-bottom-left">
+          <div class="feature-text text-right">
+            <span class="stats-h1"> 30 </span>
+            <span class="stats-h2">Activities</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="assets/img/whyjoin/Img2.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="center" #globe>
+        <div class="circle">
+          <div class="circle">
+            <div class="main-img">
+              <img src="assets/img/whyjoin/abcd.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom left" [ngsReveal]="leftbottom">
+        <div class="feature round-top-right round-bottom-left">
+          <div class="img-wrapper">
+            <img src="assets/img/whyjoin/Img 3.jpg" />
+          </div>
+          <div class="feature-text text-left">
+            <span class="stats-h1">100 </span>
+            <span class="stats-h2">Colleges</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottomright" [ngsReveal]="rightbottom">
+        <div class="feature round-top-left round-bottom-right">
+          <div class="feature-text text-right">
+            <span class="stats-h1">250</span>
+            <span class="stats-h2">Volunteers</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="assets/img/whyjoin/Img 4.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-center">
+    <button
+      type="button"
+      routerLink="/joinus"
+      class="btn btn-primary btn-lg btn1 btn-why"
+    >
+      JOIN US
+    </button>
+    <button type="button" class="btn btn-primary btn-lg btn2 btn-why">
+      <a
+        class="donate"
+        href="https://panel.udgaar.in/web/#/donation"
+        target="_blank"
+        >DONATE</a
+      >
+    </button>
+  </div>
+</section>

@@ -1,0 +1,315 @@
+.container {
+  width: 100% !important;
+  background-color: black;
+  height: 100px;
+}
+
+.contact-wrap {
+  width: 98%;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  display: none;
+}
+
+.contact-wrap::after {
+  position: absolute;
+  content: "";
+  /* border-bottom: 2px solid grey; */
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.upper-link li {
+  float: right;
+}
+.contact-wrap ul {
+  margin-top: 0px;
+  padding: 0;
+  position: absolute;
+  right: -20px;
+}
+
+.contact-wrap ul li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.contact-wrap ul li a {
+  display: inline-block;
+  position: relative;
+  font-size: 14px !important;
+  color: #c8c8c9;
+  font-family: barlow;
+  transition: 0.3s all ease-in-out;
+  transform: scale(1);
+  font-weight: 300;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+.gly-box {
+  border: solid 1px #acaeb2;
+  padding: 3px;
+}
+
+.contact-wrap ul li input {
+  position: relative;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 7px 20px;
+  border-bottom-right-radius: 50;
+  border-radius: 20px;
+  outline: none;
+  width: 240px;
+  font-size: 14px !important;
+  color: #fff;
+}
+.contact-wrap ul li input::placeholder {
+  color: rgb(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.contact-wrap2 {
+  width: 98%;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contact-wrap2 nav {
+  display: none;
+}
+
+.contact-wrap2 nav > ul {
+  margin-top: 10px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.contact-wrap2 nav > ul > li {
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+  outline: 0;
+  cursor: pointer;
+}
+
+.contact-wrap2 nav ul li a {
+  position: relative;
+  font-family: barlow;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contact-wrap2 nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 2px;
+  height: 20px;
+  background-color: #0db496;
+}
+.contact-wrap2 nav > ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #0db496;
+  transition: 0.5s width ease-in-out;
+  margin: auto;
+}
+.contact-wrap2 nav > ul > li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #0db496;
+  transition: 0.5s width ease-in-out;
+  margin: auto;
+}
+
+.contact-wrap2 nav > ul > li:hover::before {
+  width: 100%;
+}
+
+.contact-wrap2 nav > ul > li:hover::after {
+  width: 100%;
+}
+.contact-wrap2 nav > ul > li .btn-box::after {
+  display: none;
+}
+.contact-wrap2 nav > ul > li .btn-box::before {
+  display: none;
+}
+
+.contact-wrap2 nav > ul > li.btn-box {
+  border: 2px solid #0db496;
+  border-radius: 20px;
+  padding: 5px 10px;
+  position: relative;
+  /* box-shadow: 2px 2px 6px 1px #0db496; */
+  margin-left: 10px;
+}
+
+.contact-wrap2 nav > ul > li.btn-box a {
+  background: transparent !important;
+  position: relative;
+  color: #0db496;
+  text-decoration: none;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+.contact-wrap2 nav > ul > li.btn-box a::after {
+  display: none;
+}
+.contact-wrap2 nav ul li.btn-box:hover::after {
+  display: none;
+}
+.contact-wrap2 nav ul li.btn-box:hover::before {
+  display: none;
+}
+
+img {
+  border: 0;
+  margin-top: 11px !important;
+}
+.contact-wrap2 .branding-logo {
+  height: 75px;
+  width: 20%;
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+}
+.fa-search {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: -30px;
+  top: -13px;
+  cursor: pointer;
+}
+
+.icon-box {
+  display: inline-block;
+}
+.icon-box a .fa {
+  font-size: 28px;
+}
+.icon-box a {
+  color: white;
+  font-size: 35px;
+  margin-left: 5px;
+}
+
+.contact-wrap2 nav ul li .sub-nav-list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 10;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  /* height: 200px; */
+  transition: 3s opacity ease-in-out;
+  border-radius: 3px;
+  display: none;
+  opacity: 0;
+}
+
+.contact-wrap2 nav ul li:hover .sub-nav-list {
+  display: block;
+  opacity: 1;
+  transition: 3s opacity ease-in-out;
+}
+
+.contact-wrap2 nav > ul > li .sub-nav-list > ul {
+  padding-left: 0;
+}
+
+.contact-wrap2 nav > ul > li .sub-nav-list > ul > li {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-wrap2 nav ul li .sub-nav-list ul li:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-wrap2 .hamburger {
+  position: relative;
+  width: 40px;
+  float: right;
+  cursor: pointer;
+  top: 80%;
+  transform: translateY(-50%);
+  transition: 0.5s all ease-in-out;
+  font-size: 10px !important;
+}
+
+.contact-wrap2 .hamburger span {
+  width: 100%;
+  height: 4px;
+  background: white;
+  display: inline-block;
+  margin: 3px 0px;
+  transition: 0.2s all ease-in-out;
+}
+
+.contact-wrap2 .hamburger.active span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-35deg);
+  transition: 0.5s all ease-in-out;
+}
+.contact-wrap2 .hamburger.active span:nth-child(1) {
+  display: none;
+  transition: 0.5s all ease-in-out;
+}
+.contact-wrap2 .hamburger.active span:nth-child(3) {
+  transform: scale;
+  transform: rotate(40deg);
+  transition: 0.5s all ease-in-out;
+}
+
+.mob {
+  display: block;
+}
+
+.logo-home {
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  .contact-wrap {
+    display: block;
+  }
+
+  .contact-wrap2 nav {
+    display: block;
+  }
+  .container {
+    height: 85px;
+    border-block: solid 2px #ccc;
+  }
+  .contact-wrap2 .hamburger {
+    display: none;
+  }
+  .mob {
+    display: none;
+  }
+}

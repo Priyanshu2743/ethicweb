@@ -1,0 +1,152 @@
+/* ///////From CSS ////// */
+.form-box {
+    height: 100%;
+    background: url("/assets/img/eeo-bg.jpg") center center fixed;
+    filter: grayscale(100%);
+    transition: 0.7s filter ease-in-out;
+    background-size: cover;
+  }
+  .form-box:hover {
+    filter: grayscale(0);
+  }
+  .form-box .input-box,
+  .textarea-box,
+  .select-box {
+    margin: 20px 0;
+  }
+  .form-box .intro-box {
+    text-align: center;
+  }
+  .form-box .intro-box h3 {
+    font-size: 45px;
+    color: #ffffffba;
+  }
+  .shade {
+    overflow: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(150deg, rgba(0, 0, 0, 0.78), #00000069);
+  }
+  
+  .blackboard {
+    position: relative;
+    max-width: 900px;
+    margin: 7% auto;
+    overflow: hidden;
+  }
+  
+  .form-box .form {
+    padding: 70px 20px 20px;
+  }
+  
+  p {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  
+  label {
+    vertical-align: middle;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.7);
+    width: 100%;
+  }
+  
+  p:nth-of-type(5) > label {
+    vertical-align: top;
+  }
+  select {
+    border: none;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #ffffffa1;
+    color: #ffffffa1 !important;
+    vertical-align: middle;
+    font-family: "Permanent Marker", cursive !important;
+    font-size: 1.6em !important;
+    color: rgba(238, 238, 238, 0.7);
+  }
+  select:focus {
+    outline: none;
+  }
+  input,
+  textarea {
+    vertical-align: middle;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.8);
+    line-height: 0.6em;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid #ffffffa1;
+  }
+  
+  textarea {
+    font-size: 1.4em;
+    line-height: 1em;
+    resize: none;
+  }
+  
+  input[type="submit"] {
+    cursor: pointer;
+    color: rgba(238, 238, 238, 0.7);
+    line-height: 1em;
+    padding: 0;
+  }
+  .form-box button {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #ffffff7d;
+    color: #ffffff8c;
+    margin-top: 30px;
+    transition: 0.5s all ease-in-out;
+  }
+  .form-box button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .form-box button:focus {
+    outline: none;
+  }
+  input[type="submit"]:focus {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+  }
+  
+  ::-moz-selection {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: rgba(238, 238, 238, 0.4);
+    color: rgba(238, 238, 238, 0.3);
+    text-shadow: none;
+  }
+  .form-box .wipeout {
+    overflow: hidden;
+  }
+  
+  span
+{
+  color:red !important;
+  font-weight: bold;
+}
+[disabled]
+{
+  cursor: not-allowed;
+}
+select>option{
+  color:black;
+}

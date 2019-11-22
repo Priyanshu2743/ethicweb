@@ -1,0 +1,59 @@
+.container-topic {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  font-family: barlow;
+  overflow: hidden;
+  /* background-color: #ccc; */
+}
+.edu-heading h3 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.edu-heading h3 span {
+  color: #0cb496;
+}
+.edu-heading h3:after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #c4c4c4;
+  position: absolute;
+  bottom: -10px;
+  left: 49%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.v-e-topic p {
+  font-size: 18px;
+}
+.v-e-topic h2 {
+  font-size: 24px;
+}
+.v-e-topic ul li {
+  font-size: 18px;
+}
+.v-e-topic-img {
+  height: 270px;
+  width: 350px;
+}
+.v-e-topic-img img {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+.bottom-div {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 767.98px) {
+  .v-e-topic-img {
+    margin: 20px auto;
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 449.98px) {
+}

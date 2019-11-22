@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="contact-wrap">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="branding-logo">
+          <img
+            src="assets/img/navmenu/Ethicraft-logo.png"
+            class="logo-home"
+            routerLink="/home"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-9 col-md-9 col-sm-9">
+        <ul class="upper-link">
+          <li></li>
+          <li>
+            <a class="gly-icon" href="mailto:ethiccraftclub@gmail.com"
+              ><span class="glyphicon glyphicon-envelope gly-box"></span>
+              ethiccraftclub@gmail.com</a
+            >
+          </li>
+          <li>
+            <a class="gly-icon"
+              ><span class="glyphicon glyphicon-earphone gly-box"></span>
+              9319866696</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-wrap2">
+    <div class="branding-logo mob">
+      <img
+        src="assets/img/navmenu/Ethicraft-logo.png"
+        class="logo-home"
+        routerLink="/home"
+      />
+    </div>
+    <div
+      class="hamburger"
+      [ngClass]="{ active: clickState }"
+      (click)="onClickMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul>
+        <li routerLink="/home"><a>Home</a></li>
+        <li routerLink="/about">
+          <a>About Us</a>
+          <!-- <div class="sub-nav-list" style="width:200%;left:-50%;">
+            <ul>
+              <li routerLink="/about"><a>About Us</a></li>
+              <li routerLink="/objectives"><a>Mission & Objectives</a></li>
+            </ul>
+          </div> -->
+        </li>
+        <li routerLink="/education & training">
+          <a>Education & Training</a>
+        </li>
+        <li>
+          <a>News & Events <i class="fa fa-angle-down"></i></a>
+          <div class="sub-nav-list">
+            <ul>
+              <li routerLink="/recent events"><a>Recent Events</a></li>
+              <!-- <li><a aria-disabled="true">Upcoming Events</a></li> -->
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a>Get Involved <i class="fa fa-angle-down"></i></a>
+          <div class="sub-nav-list">
+            <ul>
+              <li routerLink="/overview"><a>Overview</a></li>
+              <li routerLink="/members"><a>Member</a></li>
+              <li routerLink="/ambassador"><a>Campus Ambassador</a></li>
+              <li routerLink="/officer"><a>Ethiccraft Executive Member</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- <li routerLink="/contact us"><a>Conatct Us</a></li> -->
+        <li class="btn-box"><a routerLink="/joinus">JOIN US</a></li>
+        <li class="btn-box">
+          <a
+            class="donate"
+            href="https://panel.udgaar.in/web/#/donation"
+            target="_blank"
+            >DONATE</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<app-mob-nav *ngIf="clickState" (closeNav)="onClickMenu()"></app-mob-nav>

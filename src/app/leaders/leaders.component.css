@@ -1,0 +1,96 @@
+.container {
+  width: 100% !important;
+  max-width: 1340px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.section {
+  background-color: #0cb496;
+  margin: auto;
+}
+
+.LL-size {
+  position: relative;
+  max-width: 1340px;
+  margin: 0 auto;
+  font-family: barlow;
+}
+.LL {
+  padding: 60px 150px;
+}
+.LL-img img {
+  max-width: 200px;
+  height: 125px;
+  float: right;
+  margin-bottom: 70px;
+  border: solid 6px #e7e7e7;
+}
+.col-lg-9 {
+  width: 75% !important;
+}
+.LL-text {
+  margin-left: 40px;
+}
+.LL-text p {
+  font-size: 18px;
+  color: white;
+  overflow: hidden;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1;
+}
+.mline {
+  background: #ccc;
+  width: 4%;
+  padding: 1px;
+  margin-top: 15px;
+}
+.name {
+  color: #fff !important;
+  font-size: 18px;
+  margin-top: 15px;
+  font-style: italic;
+  font-weight: 400;
+}
+.LL-text h6 {
+  font-size: 13px;
+  color: #fff;
+  /* margin: -8px 0px !important; */
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .LL-text p {
+    font-size: 15px;
+    font-weight: 900px;
+    color: white;
+  }
+
+  .LL-img img {
+    float: none;
+    margin: 12px 44px;
+  }
+  .row {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .LL {
+    padding: 20px 100px;
+  }
+  .section {
+    margin: auto;
+  }
+  .leader-height {
+    height: 314px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .leader-height {
+    height: 450px;
+  }
+  .col-lg-9 {
+    width: 100% !important;
+  }
+}

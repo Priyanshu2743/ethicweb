@@ -1,0 +1,145 @@
+<div class="wrapup">
+<button class="btn btn-primary mybtn" (click)="signout()">Sign Out</button>
+<p>Get In Touch Table</p>
+<p>Export as XLSX by clicking the below button</p>
+<button (click)="exportAsXLSX('getInTouch')"><i class="fa fa-file-excel-o"></i></button>
+<table>
+ <tr>
+   <th>Request ID</th>
+   <th>First Name</th>
+   <th>Last Name</th>
+   <th>Email</th>
+   <th>Contact</th>
+   <th>Message</th>
+ </tr>
+ <tr *ngFor="let item of formData">
+   <td>{{item.Id}}</td>
+   <td>{{item.fname}}</td>
+   <td>{{item.lname}}</td>
+   <td>{{item.email}}</td>
+   <td>{{item.contact}}</td>
+   <td>{{item.comment}}</td>
+ </tr>
+</table>
+
+<p>Stay Tune with us</p>
+<p>Export as XLSX by clicking the below button</p>
+<button (click)="exportAsXLSX('StayTune')"><i class="fa fa-file-excel-o"></i></button>
+<table>
+ <tr>
+   <th>Request ID</th>
+   <th>Email</th> 
+ </tr>
+ <tr *ngFor="let item1 of stayTuneData">
+   <td>{{item1.Id}}</td>
+   <td>{{item1.subscribe}}</td>
+ </tr>
+</table>
+
+
+<p>Newletters</p>
+<p>Export as XLSX by clicking the below button</p>
+<button (click)="exportAsXLSX('Newsletter')"><i class="fa fa-file-excel-o" ></i></button>
+<table>
+ <tr>
+   <th>Request ID</th>
+   <th>Email</th> 
+ </tr>
+ <tr *ngFor="let item2 of newsletterData">
+   <td>{{item2.Id}}</td>
+   <td>{{item2.email}}</td>
+ </tr>
+</table>
+
+<p>JoinUs Form</p>
+<p>Export as XLSX by clicking the below button</p>
+<button (click)="exportAsXLSX('joinus')"><i class="fa fa-file-excel-o" ></i></button>
+<table>
+ <tr>
+   <th>First Name</th>
+   <th>Last Name</th> 
+   <th>Gender</th> 
+   <th>Contact</th> 
+   <th>WhatsApp</th> 
+   <th>Email</th> 
+   <th>College Name</th> 
+   <th>Course Name</th> 
+   <th>Course Year</th> 
+   <th>Address</th> 
+   <th>Achievements</th>
+   <th>Hobbies</th>
+   <th>Inspirations</th>
+ </tr>
+ <tr *ngFor="let item3 of joinusData">
+   <td>{{item3.fname}}</td>
+   <td>{{item3.lname}}</td>
+   <td>{{item3.Gender}}</td>
+   <td>{{item3.contact}}</td>
+   <td>{{item3.whatsapp}}</td>
+   <td>{{item3.email}}</td>
+   <td>{{item3.collegeName}}</td>
+   <td>{{item3.courseName}}</td>
+   <td>{{item3.courseYear}}</td>
+   <td>{{item3.address}}</td>
+   <td>{{item3.achievements}}</td>
+   <td>{{item3.hobbies}}</td>
+   <td>{{item3.inspiration}}</td>
+ </tr>
+</table>
+
+<p>Campus ambassador Form</p>
+<p>Export as XLSX by clicking the below button</p>
+<button (click)="exportAsXLSX('ca')"><i class="fa fa-file-excel-o" ></i></button>
+<table>
+ <tr>
+   <th>Member ID</th> 
+   <th>First Name</th>
+   <th>Last Name</th> 
+   <th>Contact</th> 
+   <th>Email</th> 
+   <th>College Name</th>  
+   <th>reason</th>
+   <th>contribution</th>
+   <th>reference</th>
+ </tr>
+ <tr *ngFor="let item3 of caData">
+   <td>{{item3.memberId}}</td>
+   <td>{{item3.fname}}</td>
+   <td>{{item3.lname}}</td>
+   <td>{{item3.contact}}</td>
+   <td>{{item3.email}}</td>
+   <td>{{item3.college}}</td>
+   <td>{{item3.reason}}</td>
+   <td>{{item3.contribution}}</td>
+   <td>{{item3.reference}}</td>
+ </tr>
+</table>
+
+<p>Executive Officer Form</p>
+<p>Export as XLSX by clicking the below button</p>
+<button (click)="exportAsXLSX('eeo')"><i class="fa fa-file-excel-o" ></i></button>
+<table>
+ <tr>
+    <th>Member ID</th> 
+    <th>First Name</th>
+    <th>Last Name</th> 
+    <th>Contact</th> 
+    <th>Email</th> 
+    <th>College Name</th>  
+    <th>reason</th>
+    <th>contribution</th>
+    <th>reference</th>
+ </tr>
+ <tr *ngFor="let item3 of eeoData">
+    <td>{{item3.memberId}}</td>
+    <td>{{item3.fname}}</td>
+    <td>{{item3.lname}}</td>
+    <td>{{item3.contact}}</td>
+    <td>{{item3.email}}</td>
+    <td>{{item3.college}}</td>
+    <td>{{item3.reason}}</td>
+    <td>{{item3.contribution}}</td>
+    <td>{{item3.reference}}</td>
+ </tr>
+</table>
+</div>

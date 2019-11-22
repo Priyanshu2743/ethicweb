@@ -1,0 +1,173 @@
+<section class="form-box">
+                <div class="container">
+                        <div class="shade">
+                                <div class="blackboard">
+                                    <div class="intro-box">
+                                        <h3>Join Us</h3>
+                                    </div>
+                                        <div class="form">
+                                                <form (ngSubmit)="onSubmitForm(f)" #f="ngForm">
+                                                <div class="col-lg-6 col-sm-6 input-box">
+                                                        <label><span>*</span>First Name: </label>
+                                                        <input type="text" name="fname" ngModel required #fname="ngModel" />
+                                                        <span *ngIf="fname.invalid && fname.touched" class="help-block">Field Can't be empty</span>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-6 input-box">
+                                                        <label>Last Name: </label>
+                                                        <input type="text" name="lname" ngModel/>
+                                                </div>
+                                                <div class="col-lg-12 select-box">
+                                                        <label for="gen"><span>*</span>Gender</label>
+                                                        <select name="Gender" id="gen" ngModel required #gen="ngModel">
+                                                                <!-- <option value="other">Other</option> -->
+                                                                <option value="male">Male</option>
+                                                                <option value="female">Female</option>
+                                                        </select>
+                                                        <span *ngIf="gen.invalid && gen.touched" class="help-block">Field Can't be empty</span>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-6 input-box">
+                                                        <label><span>*</span>Contact: </label>
+                                                        <input type="tel"  pattern="[0-9]{10}" name="contact" ngModel required #contact="ngModel"/>
+                                                        <span *ngIf="contact.invalid && contact.touched" 
+                                                        class="help-block">Field Can't be empty or string other than 10 digit phone no</span>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-6 input-box">
+                                                        <label>Whatsapp: </label>
+                                                        <input type="tel" pattern="[0-9]{10}" name="whatsapp" ngModel/>
+                                                </div>
+                                           <div class="col-lg-12 input-box">
+                                                        <label><span>*</span>E-Mail: </label>
+                                                        <input type="text" name="email" ngModel required email #eee="ngModel"/>
+                                                        <span *ngIf="eee.invalid && eee.touched" 
+                                                        class="help-block">Should be a valid email address</span>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-6 select-box">
+                                                        <label for="clg"><span>*</span>College Name</label>
+                                                        <select name="collegeName" id="clg" ngModel required #clg="ngModel">
+                                                                <option value="ABES">ABES
+                                                                </option>
+                                                                <option value="AKGEC">AKGEC</option>
+                                                                <option value="Ambedkar (DU)">Ambedkar (DU)</option>
+                                                                <option value="Apex Institute of Technology">Apex Institute of Technology</option>
+                                                                <option value="Aryabhatta College">Aryabhatta College</option>
+                                                                <option value="Aurobindo">Aurobindo College</option>
+                                                                <option value="Aurobindo college (evening )">Aurobindo college (evening )</option>
+                                                                <option value="Bennett University">Bennett University</option>
+                                                                <option value="Bhaskaracharya College">Bhaskaracharya College</option>
+                                                                <option value="CPJ College of Law( IP)">CPJ College of Law( IP)</option>
+                                                                <option value="Dindayal Upadhayaya College, University of Delhi">Dindayal Upadhayaya College, University of Delhi</option>
+                                                                <option value="DITE">DITE</option>
+                                                                <option value="DME Law college">DME Law college</option>
+                                                                <option value="DPG institute of technology and management">DPG institute of technology and management</option>
+                                                                <option value="Dr. Akhilesh Das Gupta Institute of Technology and Management">Dr. Akhilesh Das Gupta Institute of Technology and Management</option>
+                                                                <option value="DTU">DTU</option>
+                                                                <option value="Dyal Singh college(E)">Dyal Singh college(E)</option>
+                                                                <option value="G.B PANT GOVT ENGINEERING COLLEGE">G.B PANT GOVT ENGINEERING COLLEGE</option>
+                                                                <option value="G.B Pant Inst, of technolgy - GBPIT">G.B Pant Inst, of technolgy - GBPIT</option>
+                                                                <option value="GL Bajaj">GL Bajaj</option>
+                                                                <option value="Govind Ballabh Pant University of Agriculture & Technology">Govind Ballabh Pant University of Agriculture & Technology</option>
+                                                                <option value="HITECH">HITECH</option>
+                                                                <option value="Ideal Institute of Tech">Ideal Institute of Tech</option>
+                                                                <option value="IIHMR, Dwarka">IIHMR, Dwarka</option>
+                                                                <option value="IIMM">IIMM</option>
+                                                                <option value="IIT BHU">IIT BHU</option>
+                                                                <option value="IIT Delhi">IIT Delhi</option>
+                                                                <option value="IIT Mandi">IIT Mandi</option>
+                                                                <option value="INMANTEC">INMANTEC</option>
+                                                                <option value="Institute of Chemical Technology, Mumbai">Institute of Chemical Technology, Mumbai</option>
+                                                                <option value="IPEC">IPEC</option>
+                                                                <option value="IPEM Law College">IPEM Law College</option>
+                                                                <option value="ITS">ITS</option>
+                                                                <option value="Jaipuria School of Business">Jaipuria School of Business</option>
+                                                                <option value="KIET">KIET</option>
+                                                                <option value="Kirori mal college">Kirori mal college</option>
+                                                                <option value="L.D. College of Engineering">L.D. College of Engineering</option>
+                                                                <option value="Lal Bahadur Shastri Institute of Management,Delhi">Lal Bahadur Shastri Institute of Management,Delhi</option>
+                                                                <option value="LPU">LPU</option>
+                                                                <option value="Maharaja Surajmal Institute">Maharaja Surajmal Institute</option>
+                                                                <option value="Maharaja Surajmal Institute of Technology">Maharaja Surajmal Institute of Technology</option>
+                                                                <option value="Maulana Azad college">Maulana Azad college</option>
+                                                                <option value="Nalanda University">Nalanda University</option>
+                                                                <option value="NIT - Delhi">NIT - Delhi</option>
+                                                                <option value="NIT Patna">NIT Patna</option>
+                                                                <option value="NITRA">NITRA</option>
+                                                                <option value="PGDAV evening College">PGDAV evening College</option>
+                                                                <option value="PGDAV Morning">PGDAV Morning</option>
+                                                                <option value="Punjab University">Punjab University</option>
+                                                                <option value="Ramjas">Ramjas</option>
+                                                                <option value="RKGIT">RKGIT</option>
+                                                                <option value="Rudrapur Institute of Tecnology">Rudrapur Institute of Tecnology</option>
+                                                                <option value="Sam Hingginbottom University of Agriculture of Science and Technology">Sam Hingginbottom University of Agriculture of Science and Technology</option>
+                                                                <option value="Satyavati College(M)">Satyavati College(M)</option>
+                                                                <option value="Shaheed Bhagat Singh college">Shaheed Bhagat Singh college</option>
+                                                                <option value="Shyama Prasad Mukherjee College">Shyama Prasad Mukherjee College</option>
+                                                                <option value="South Asian Univ">South Asian Univ</option>
+                                                                <option value="Sri Ram Bhartiya Kala Kendra">Sri Ram Bhartiya Kala Kendra</option>
+                                                                <option value="Sri Venkateswara college">Sri Venkateswara college</option>
+                                                                <option value="Sunderdeep college">Sunderdeep college</option>
+                                                                <option value="Vaishno College of Engineering">Vaishno College of Engineering</option>
+                                                                <option value="VIPS(IP)">VIPS(IP)</option>
+                                                                <option value="World Institute of Technology, WIT College">World Institute of Technology, WIT College</option>
+                                                                <option value="YMCA University of Science and Technology">YMCA University of Science and Technology</option>
+                                                                <option value="Other">Other</option>
+                                                              </select>
+                                                        <span *ngIf="clg.invalid && clg.touched" class="help-block">Field Can't be empty</span>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-6 select-box">
+                                                        <label for="course"><span>*</span>Course Name</label>
+                                                        <select name="courseName" id="course" ngModel required #course="ngModel">
+                                                                <option value="otp">Diploma</option>
+                                                                <option value="otp">BA</option>
+                                                                <option value="vl2">B.Com</option>
+                                                                <option value="vl2">BCA</option>
+                                                                <option value="sps">B.Tech</option>
+                                                                <option value="sps">M.Tech</option>
+                                                                <option value="sps">MCA</option>
+                                                                <option value="sps">MBA</option>
+                                                                <option value="sps">Other</option>
+                                                              </select>
+                                                <span *ngIf="course.invalid && course.touched" class="help-block">Field Can't be empty</span>
+                                                </div>
+                                                <div class="col-lg-12 select-box">
+                                                        <label for="year"><span>*</span>Course Year</label>
+                                                        <select name="courseYear" id="year"  ngModel required #cyear="ngModel">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                
+                                                              </select>
+                                                        <span *ngIf="cyear.invalid && cyear.touched" class="help-block">Field Can't be empty</span>
+                                                </div>
+                                           <div class="col-lg-12 textarea-box">
+                                                        <label><span>*</span>Address: </label>
+                                                        <textarea name="address" ngModel required #addrss="ngModel"></textarea>
+                                                        <span *ngIf="addrss.invalid && addrss.touched" class="help-block">Field Can't be empty</span>
+                                                </div>
+                                          
+                                          <div class="col-lg-12 textarea-box">
+                                                        <label>Achievements: </label>
+                                                        <textarea name="achievements" ngModel></textarea>
+                                                </div>
+                                          <div class="col-lg-12 textarea-box">
+                                                        <label>Hobbies: </label>
+                                                        <textarea name="hobbies" ngModel></textarea>
+                                                </div>
+                                          <div class="col-lg-12 textarea-box">
+                                                        <label>Inspiration for Joining Ethiccraft Club: </label>
+                                                        <textarea name="inspiration" ngModel></textarea>
+                                                </div>
+                                               
+                                                <!-- <div class="col-lg-12 wipeout">
+                                                  <label for="photo">Upload Photo </label>
+                                                  <input type="file" name="photo" id="photo" ngModel/>
+                                                </div> -->
+                                                        <div class="col-lg-12 wipeout">
+                                                        <button type="submit" [disabled]="!(f.valid && f.touched)">Submit</button>
+                                                </div>
+                                                </form>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>

@@ -1,0 +1,120 @@
+<section>
+  <div class="slideshow-container">
+    <p class="T-heading" [ngsReveal]="heading">
+      TESTI<span style="color:#0cb496;">MONIALS</span>
+    </p>
+    <p id="mline"></p>
+    <div class="mySlides" #slides>
+      <div>
+        <p class="quote">
+          “After getting connected with Ethiccraft Club, I feel that my outlook
+          towards life has completely changed. My thoughts have gained clarity
+          and wisdom. I am very thankful to the club for shaping my life.”
+        </p>
+
+        <p></p>
+      </div>
+
+      <div>
+        <img
+          class="testimonial-img img-responsive"
+          src="./assets/img/testinomial/T1.PNG"
+          alt=""
+        />
+      </div>
+      <div>
+        <p class="testimonial-name">Shubham Chaudhary</p>
+      </div>
+      <div>
+        <p class="testimonial-position">Chemical Engineering, IIT Delhi</p>
+      </div>
+    </div>
+
+    <div class="mySlides" #slides>
+      <div>
+        <p class="quote">
+          “I got connected with Ethiccraft Club during my third year of
+          Engineering. Earlier, I would not interact with people much but after
+          getting connected with the club, I started interacting with many
+          people and learnt the art of situation tackling..”
+        </p>
+      </div>
+      <div>
+        <img
+          class="testimonial-img img-responsive"
+          src="assets/img/testinomial/t2.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <p class="testimonial-name">Muskan Verma</p>
+      </div>
+      <div>
+        <p class="testimonial-position">Information Technology, RKGIT</p>
+      </div>
+    </div>
+    <div class="mySlides" #slides>
+      <div>
+        <p class="quote">
+          <!-- <i class="fa fa-quote-left"></i> -->
+          "While pursuing my studies, I was trying to know the various secrets
+          associated with a happy and satisfied life. I got answers to all my
+          queries after getting a meeting with the members of Ethiccraft Club.
+          Ethiccraft Rocks!!”
+          <!-- <i
+            class="fa fa-quote-right"
+          ></i> -->
+        </p>
+      </div>
+      <div>
+        <img
+          class="testimonial-img img-responsive"
+          src="assets/img/testinomial/t3.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <p class="testimonial-name">Shubham Sagar</p>
+      </div>
+      <div>
+        <p class="testimonial-position">Faculty of Law, Delhi University</p>
+      </div>
+    </div>
+    <!-- <div class="mySlides" #slides>
+      <div>
+        <p class="quote">
+           <i class="fa fa-quote-left"></i>
+          “ My journey with Ethiccraft began when the first program of the Club
+          was conducted inside our institution. The talk by Vice-President Sir
+          helped me to become more thoughtful and introspective in my life.
+          Thank You Ethiccraft for helping me March towards Values!!”
+          <i
+            class="fa fa-quote-right"
+          ></i>
+        </p>
+      </div>
+      <div>
+        <img
+          class="testimonial-img img-responsive"
+          src="assets/img/testinomial/T2.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <p class="testimonial-name">Shweta Kushwaha</p>
+      </div>
+      <div>
+        <p class="testimonial-position">
+          SRM College of Engineering and Management, Lucknow
+        </p>
+      </div>
+    </div> -->
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+    <div class="dot-container">
+      <span class="dot" (click)="currentSlide(1)" #dots></span>
+      <span class="dot" (click)="currentSlide(2)" #dots></span>
+      <span class="dot" (click)="currentSlide(3)" #dots></span>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,180 @@
+.quote {
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 600;
+  /* margin-left: 4px; */
+  font-family: barlow;
+  margin: 0 0 36px 4px;
+  border: none !important;
+}
+.T-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 40px;
+  font-family: barlow;
+  position: relative;
+  margin-bottom: 75px;
+}
+.slideshow-container {
+  position: relative;
+  background-image: url("/assets/img/testinomial/t-p.jpg");
+  background-size: cover;
+  font-family: barlow;
+  height: 475px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 10px 250px 30px 250px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 44%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #e6e6e6;
+  font-weight: bold;
+  font-size: 1.5vw;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  /* background: #f1f1f1f1; */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 2px;
+  width: 14px;
+  margin: 2px 5px;
+  background-color: #0cb496;
+  border-radius: 20%;
+  display: inline-block;
+  /* transition: background-color 0.6s ease; */
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #cccccc;
+}
+
+/* Add a blue color to the author */
+.testimonial-name {
+  color: #0cb496;
+  margin: 0 auto;
+  font-size: 16px;
+  text-transform: capitalize !important;
+  font-weight: bold;
+}
+.testimonial-position {
+  margin: 0 auto;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 13px;
+}
+.testimonial-img {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  margin: 1vh auto;
+  max-width: 80%;
+  height: auto;
+}
+.T-heading:after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #c4c4c4;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media (max-width: 1050px) {
+  .slideshow-container {
+    height: 550px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-img {
+    float: none;
+  }
+  .quote {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 4px;
+    font-family: barlow;
+  }
+  .testimonial-name {
+    font-size: 16px;
+    font-family: barlow;
+    font-weight: bold;
+  }
+  .testimonial-position {
+    font-size: 13px;
+  }
+  .mySlides {
+    display: none;
+    padding: 10px 70px 0px 70px;
+    text-align: center;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .slideshow-container {
+    height: 550px;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slideshow-container {
+    height: 770px;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+    <h2 class="obj-heading">OBJECT<span>IVES</span></h2>
+
+    <div *ngFor="let content of contents; let i = index" class="row">
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 shadow">
+        <div class="obj1-img">
+          <img class="objective-img" src="{{ images[i] }}" alt="obj-1" />
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 shadow">
+        <div class="row obj-1-div">
+          <h3>
+            {{ headings[i] }}
+          </h3>
+          <p>
+            {{ content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

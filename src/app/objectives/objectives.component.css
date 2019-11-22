@@ -1,0 +1,52 @@
+* {
+  font-family: barlow;
+}
+.objective-img {
+  width: 100%;
+  height: 100%;
+  float: left;
+  /* margin: 0 auto; */
+}
+.obj1-img {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+.obj-heading {
+  text-align: center;
+  position: relative;
+  font-size: 26px;
+  font-family: barlow;
+  font-weight: bold;
+  margin-bottom: 34px;
+}
+.obj-heading:after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #c4c4c4;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.obj-heading span {
+  color: #0cb496;
+}
+.obj-1-div {
+  background-color: #0cb496;
+  min-height: 140px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+}
+.obj-1-div h3 {
+  padding: 0px 10px 0 10px;
+  color: #fff;
+}
+.obj-1-div p {
+  padding: 0 10px 10px 10px;
+  color: #fff;
+  font-size: 18px;
+}

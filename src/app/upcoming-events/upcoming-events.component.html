@@ -1,0 +1,93 @@
+<section class="upcoming-events">
+  <div *ngIf="disp" class="overlay" (click)="onclose()">
+    <img src="{{ images[imgID] }}" class="full-img" />
+    <!-- <div class="close-btn" (click)="onclose()">
+      <img src="assets/img/causes/close_icon.png" />
+    </div> -->
+  </div>
+  <div class="heading-wrapper">
+    <h2>UPCOMING <span>EVENTS</span></h2>
+  </div>
+  <div class="three-cards">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 card-padding">
+        <!--Card 1-->
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="/assets/img/upcoming/card3.1.jpg"
+              alt="ops!"
+              (click)="onClickImg(0)"
+            />
+          </div>
+          <div class="card-text">
+            <p>MEMBERSHIP CAMPAIGN</p>
+            <div class="small-text">
+              <p>October 30, 2019</p>
+              <p>Click here to Join US</p>
+              <a routerLink="/up-modal1" class="Rd">
+                <b>Read More</b>
+              </a>
+            </div>
+            <!-- <div class="icons">
+              <span><i class="fa fa-comment" aria-hidden="true"></i> 25 </span>
+              <span><i class="fa fa-heart" aria-hidden="true"></i> 343 </span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 card-padding">
+        <!--Card 2-->
+        <div class="card card3">
+          <div class="card-img">
+            <img
+              src="/assets/img/upcoming/pdc.jpeg"
+              alt="ops!"
+              (click)="onClickImg(1)"
+            />
+          </div>
+          <div class="card-text card-text3">
+            <p>Personality Development Course</p>
+            <div class="small-text">
+              <p>Every Week</p>
+              <p>Contact Your CA</p>
+              <a routerLink="/up-modal2" class="Rd">
+                <b>Read More</b>
+              </a>
+            </div>
+            <!-- <div class="icons">
+              <span><i class="fa fa-comment" aria-hidden="true"></i> 1 </span>
+              <span><i class="fa fa-heart" aria-hidden="true"></i>343 </span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12 card-padding">
+        Card 3
+        <div class="card card3">
+          <div class="card-img">
+            <img
+              src="/assets/img/upcoming/card4.jpeg"
+              alt="ops!"
+              (click)="onClickImg(2)"
+            />
+          </div>
+          <div class="card-text card-text3">
+            <p>Stress Management</p>
+            <div class="small-text">
+              <p>21st October 2019</p>
+              <p>DME Law College, Noida Students</p>
+              <a routerLink="/up-modal3" class="Rd">
+                <b>Read More</b>
+              </a>
+            </div>
+            <div class="icons">
+              <span><i class="fa fa-comment" aria-hidden="true"></i> 1 </span>
+              <span><i class="fa fa-heart" aria-hidden="true"></i>343 </span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>

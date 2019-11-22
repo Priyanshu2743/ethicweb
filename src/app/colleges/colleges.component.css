@@ -1,0 +1,125 @@
+.container {
+  width: 100%;
+}
+
+.college_container {
+  min-height: 120px;
+  background-color: #0cb496;
+}
+
+.College-heading {
+  color: white;
+  font-family: barlow;
+  font-size: 26px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 32px 0;
+  line-height: 1.2 !important;
+  position: relative;
+}
+
+.College-heading::after {
+  position: absolute;
+  content: "";
+  border-right: 2px solid white;
+  right: 12%;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.College-participated {
+  color: #383737;
+}
+
+.colleges {
+  font-family: barlow;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 33px 0;
+  position: relative;
+  animation-name: myanimation1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  color: #034f41 !important;
+}
+
+.fix {
+  display: none;
+}
+
+.width-fix {
+  width: 25%;
+}
+@keyframes myanimation1 {
+  0%,
+  33.33% {
+    top: -50px;
+    opacity: 0;
+  }
+  41.63%,
+  65% {
+    top: 0px;
+    opacity: 1;
+  }
+  71.66%,
+  100% {
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes myanimation2 {
+  0%,
+  30% {
+    left: -300px;
+    opacity: 1;
+  }
+  41.63%,
+  62% {
+    left: -15px;
+    opacity: 1;
+  }
+  69.66%,
+  100% {
+    left: 100px;
+    opacity: 0;
+  }
+}
+/********************************************************************************************/
+
+@media screen and (max-width: 772px) {
+  .col-xs-12 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .College-heading::after {
+    border-right: none;
+    border-bottom: 2px solid white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -25%;
+    margin: auto;
+    width: 40%;
+  }
+
+  .col-xs-4 {
+    display: none;
+  }
+  .fix {
+    display: block;
+  }
+  .colleges {
+    animation-name: myanimation2;
+  }
+  .College-heading {
+    text-align: center;
+  }
+}

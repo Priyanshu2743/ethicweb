@@ -1,0 +1,88 @@
+<section class="footer-bg">
+  <div class="container">
+    <div class="footer-margin">
+      <div class="row">
+        <div class="col-sm-7 col-md-7">
+          <p class="footer-p1 " [ngsReveal]="footerAnim1">Links</p>
+          <div class="footer-link-div" [ngsReveal]="footerAnim2">
+            <a class="footer-link" routerLink="/home">Home </a>
+            <a class="footer-link" routerLink="/about">Find Club </a>
+            <a class="footer-link" routerLink="/joinus">Join Us </a>
+            <a class="footer-link" routerLink="/about">Our Team </a>
+            <a class="footer-link" routerLink="/home">Download App </a>
+            <a class="footer-link" routerLink="/about">Mission & Vision </a>
+            <a class="footer-link" routerLink="/member">Member</a>
+            <a class="footer-link" routerLink="/ambassador"
+              >Campus Ambassador
+            </a>
+            <a class="footer-link" routerLink="/officer"
+              >Executive Committee Member</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 footer-news">
+          <p class="footer-p2" [ngsReveal]="footerAnim1">Newsletter</p>
+          <div [ngsReveal]="footerAnim2">
+            <p class="newslater-text">
+              Subscribe to our Newsletter for Regular Update.
+            </p>
+            <form (ngSubmit)="onSubmit()" #f="ngForm">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="input1 form-control"
+                  ngModel
+                  email
+                  required
+                  #email="ngModel"
+                />
+                <span *ngIf="email.invalid && email.touched" class="help-block"
+                  >Please! Enter Valid Email</span
+                >
+                <div class="footer-btn-div">
+                  <button
+                    type="submit"
+                    class="btn-sm1"
+                    [disabled]="!(f.valid && f.touched)"
+                  >
+                    SUBSCRIBE
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row footer-term">
+        <div class="col-sm-6 policy" [ngsReveal]="footerAnim3">
+          <p>Copyright © 2019 Ethiccraft. All rights Reserved</p>
+        </div>
+        <div
+          class="col-sm-6"
+          [ngsRevealSet]="footerAnim4"
+          [ngsInterval]="400"
+          [ngsSelector]="'.footer-social-link'"
+        >
+          <a
+            href="https://www.facebook.com/Ethiccraft-Club-315906882452149/"
+            target="_blank"
+          >
+            <i class="fa fa-facebook fb footer-social-link"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter  footer-social-link"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCIylXiaXT4PUMSGFHzlkMRQ"
+            target="_blank"
+          >
+            <i class="fa fa-youtube  footer-social-link"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
