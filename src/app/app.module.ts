@@ -75,6 +75,7 @@ import { Model26Component } from './model26/model26.component';
 import { Model27Component } from './model27/model27.component';
 import { Model28Component } from './model28/model28.component';
 import { Model29Component } from './model29/model29.component';
+import { UdgaarComponent } from './udgaar/udgaar.component';
 
 const routes: Routes = [
   { path: "home", component: HomePageComponent },
@@ -107,6 +108,7 @@ const routes: Routes = [
   { path: "up-modal1", component: UpmodalComponent },
   { path: "up-modal2", component: Upmodal2Component },
   { path: "up-modal3", component: Upmodal3Component },
+  { path: "udgaar", component: UdgaarComponent },
   { path: "**", redirectTo: "home", pathMatch: "full" }
 ];
 
@@ -178,7 +180,8 @@ const routes: Routes = [
     Model26Component,
     Model27Component,
     Model28Component,
-    Model29Component
+    Model29Component,
+    UdgaarComponent
   ],
   imports: [
     BrowserModule,
