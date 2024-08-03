@@ -7,9 +7,10 @@ import { Component, OnInit } from "@angular/core";
 })
 export class UpcomingEventsComponent implements OnInit {
   images = [
+    "/assets/img/upcoming/card1.jpg",
     "/assets/img/upcoming/card3.1.jpg",
     "/assets/img/upcoming/pdc.jpeg",
-    "/assets/img/upcoming/card4.jpeg"
+    "/assets/img/upcoming/card4.jpeg",
   ];
   imgID: number = 0;
   disp: boolean = false;
