@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve --host 0.0.0.0 --port 4200",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -16,6 +16,7 @@
     "@angular/compiler": "~7.2.0",
     "@angular/core": "~7.2.0",
     "@angular/forms": "~7.2.0",
+    "@angular/material": "^16.0.4",
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
