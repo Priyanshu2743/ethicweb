@@ -1,14 +1,14 @@
 .container {
   width: 100% !important;
   max-width: 1200px !important;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0 20px;
   position: relative;
   font-family: barlow;
   text-align: justify;
 }
 .ca-heading h3 {
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   font-size: 30px;
   font-weight: 500 !important;
@@ -30,6 +30,7 @@
 }
 .ca-sub p {
   font-size: 22px;
+  font-weight: bold;
 }
 .ca-p {
   font-size: 17px;
