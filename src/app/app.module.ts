@@ -75,6 +75,9 @@ import { Model26Component } from './model26/model26.component';
 import { Model27Component } from './model27/model27.component';
 import { Model28Component } from './model28/model28.component';
 import { Model29Component } from './model29/model29.component';
+import { Model30Component } from "./model30/model30.component";
+import { Model31Component } from "./model31/model31.component";
+import { Model32Component } from "./model32/model32.component";
 import { UdgaarComponent } from './udgaar/udgaar.component';
 
 const routes: Routes = [
@@ -181,6 +184,9 @@ const routes: Routes = [
     Model27Component,
     Model28Component,
     Model29Component,
+    Model30Component,
+    Model31Component,
+    Model32Component,
     UdgaarComponent
   ],
   imports: [

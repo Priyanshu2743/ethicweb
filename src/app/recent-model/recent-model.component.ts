@@ -40,7 +40,10 @@ export class RecentModelComponent implements OnInit, AfterViewInit {
     "assets/img/menu-revents/modal26-1.jpg",
     "assets/img/menu-revents/modal27-1.jpg",
     "assets/img/menu-revents/modal28-1.jpg",
-    "assets/img/menu-revents/modal29-1.jpg"
+    "assets/img/menu-revents/modal29-1.jpg",
+    "assets/img/Revent/Sankalp1.jpg",
+    "assets/img/Revent/MimeAct.jpg",
+    "assets/img/Revent/Viplava/4.jpg",
   ];
   constructor(private route: ActivatedRoute) {}
 
