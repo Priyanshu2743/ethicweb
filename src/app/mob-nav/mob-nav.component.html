@@ -14,6 +14,7 @@
     </li>
     <div *ngIf="listState && listNo === 0" class="sub-nav-list">
       <ul>
+        <li (click)="onNavigate('college-home')"><a>College Activities</a></li>
         <li (click)="onNavigate('udgaar')"><a>Udgaar</a></li>
         <li (click)="onNavigate('recent')"><a>Recent Events</a></li>
       </ul>

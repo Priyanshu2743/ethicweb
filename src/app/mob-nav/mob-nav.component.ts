@@ -41,6 +41,9 @@ export class MobNavComponent implements OnInit {
       case "amba":
         this.router.navigate(["/ambassador"]);
         break;
+      case "college-home":
+        this.router.navigate(["/college-home"]);
+        break;
       case "officer":
         this.router.navigate(["/officer"]);
         break;
