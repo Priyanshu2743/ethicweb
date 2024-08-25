@@ -1,0 +1,13 @@
+---
+version: 1
+php:
+  version: 7.4
+  handler: cgi
+  ini_options:
+    upload_max_filesize: 50M
+    post_max_size: 50M
+apache:
+  version: 2.4
+  handlers:
+    - php
+  document_root: /public_html
