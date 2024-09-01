@@ -1,0 +1,49 @@
+<!-- Include Bootstrap and Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Button to open the modal login form -->
+<button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">
+  <i class="fas fa-sign-in-alt"></i> Login
+</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">
+    <i class="fas fa-times"></i>
+  </span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/">
+    <div class="container text-center">
+      <div class="heading">
+        <h3><i class="fas fa-user-lock"></i> Login-Form</h3>
+      </div>
+      <div class="imgcontainer">
+        <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+      </div>
+      <div class="form-wrapper">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+          </div>
+          <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
+        </div>
+      </div>
+      <div class="form-wrapper">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+          </div>
+          <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success btn-block"><i class="fas fa-sign-in-alt"></i> Login</button>
+      <div class="form-wrapper mt-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    </div>
+  </form>
+</div>

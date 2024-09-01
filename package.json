@@ -16,7 +16,7 @@
     "@angular/compiler": "~7.2.0",
     "@angular/core": "~7.2.0",
     "@angular/forms": "~7.2.0",
-    "@angular/material": "^16.0.4",
+    "@angular/material": "^7.2.0",
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
@@ -28,12 +28,13 @@
     "ngx-scrollreveal": "^3.0.0",
     "rxjs": "~6.3.3",
     "scrollreveal": "^4.0.5",
+    "sweetalert2": "^9.11.0",
     "tslib": "^1.9.0",
     "xlsx": "^0.15.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular-devkit/build-angular": "^0.13.10",
     "@angular/cli": "~7.3.9",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",

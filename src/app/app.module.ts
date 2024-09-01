@@ -80,6 +80,8 @@ import { Model31Component } from "./model31/model31.component";
 import { Model32Component } from "./model32/model32.component";
 import { UdgaarComponent } from './udgaar/udgaar.component';
 import { CollegeHomeComponent } from './college-home/college-home.component';
+import { LoginComponent } from './login/login.component';
+// import { DataService } from "./udgaar/data.service";
 
 const routes: Routes = [
   { path: "home", component: HomePageComponent },
@@ -114,6 +116,7 @@ const routes: Routes = [
   { path: "up-modal3", component: Upmodal3Component },
   { path: "udgaar", component: UdgaarComponent },
   { path: "college-home", component: CollegeHomeComponent },
+  { path: "LoginComponent", component: LoginComponent},
   { path: "**", redirectTo: "home", pathMatch: "full" }
 ];
 
@@ -190,7 +193,8 @@ const routes: Routes = [
     Model31Component,
     Model32Component,
     UdgaarComponent,
-    CollegeHomeComponent
+    CollegeHomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

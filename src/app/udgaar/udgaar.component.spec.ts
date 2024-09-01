@@ -1,25 +1,33 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, OnInit } from '@angular/core';
+// import { DataService } from './data.service'; // Corrected import statement
+// import { FormGroup, FormControl, Validators } from '@angular/forms';
 
-import { UdgaarComponent } from './udgaar.component';
+@Component({
+  selector: 'udgar',
+  templateUrl: './udgaar.component.html',
+  styleUrls: ['./udgaar.component.css']
+})
+export class UdgaarComponent implements OnInit {
+  // participantForm: FormGroup;
 
-describe('UdgaarComponent', () => {
-  let component: UdgaarComponent;
-  let fixture: ComponentFixture<UdgaarComponent>;
+  // constructor(private dataService: DataService) { }
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ UdgaarComponent ]
-    })
-    .compileComponents();
-  }));
+  ngOnInit(): void {
+    // this.participantForm = new FormGroup({
+    //   'name': new FormControl('', Validators.required),
+    //   'email': new FormControl('', Validators.required),
+    //   'phone': new FormControl('', Validators.required),
+    //   'address': new FormControl('', Validators.required),
+    // });
+  }
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(UdgaarComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  onSubmit() {
+    // if (this.participantForm.valid) {
+    //   this.dataService.postFormData(this.participantForm.value).subscribe(response => {
+    //     console.log(response);
+    //   }, error => {
+    //     console.log(error);
+    //   });
+    // }
+  }
+}
