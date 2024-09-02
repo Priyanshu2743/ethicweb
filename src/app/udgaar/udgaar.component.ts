@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { FormGroup, FormControl, Validators } from '@angular/forms';
-// import { DataService } from './data.service'; // Add import statement
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -9,12 +7,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./udgaar.component.css']
 })
 export class UdgaarComponent implements OnInit {
-
-  // participantForm = new FormGroup({
-  //   FName: new FormControl('', Validators.required),
-  //   LName: new FormControl('', Validators.required),
-  //   // Add other form controls as needed
-  // });
 
   Fname: string= "";
   Lname: string= "";
@@ -26,8 +18,7 @@ export class UdgaarComponent implements OnInit {
   connection: string="";
   college_id:string="";
 
-  // constructor (private dataService: DataService) { } // Use @Inject decorator or providedIn: 'root' in DataService
-  constructor (private http: HttpClient) { } // Use @Inject decorator or providedIn: 'root' in DataService
+  constructor (private http: HttpClient) { } 
 
   register(){
     let bodyData = {
@@ -44,6 +35,7 @@ export class UdgaarComponent implements OnInit {
     this.http.post("http://localhost:3000/lokesh", bodyData, {responseType: 'text'}).subscribe((resultData: any)=> {
       console.log(resultData);
       alert("Registered Successfully");
+      window.location.href = 'https://rzp.io/l/Umangreg';
     }, (error: any) => {
       console.log(bodyData);
       console.error(error);

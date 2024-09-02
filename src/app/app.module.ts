@@ -194,7 +194,7 @@ const routes: Routes = [
     Model32Component,
     UdgaarComponent,
     CollegeHomeComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
