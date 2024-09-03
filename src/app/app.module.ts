@@ -81,6 +81,8 @@ import { Model32Component } from "./model32/model32.component";
 import { UdgaarComponent } from './udgaar/udgaar.component';
 import { CollegeHomeComponent } from './college-home/college-home.component';
 import { LoginComponent } from './login/login.component';
+import { DUActivitiesComponent } from './du-activities/du-activities.component';
+import { UdgarLiveComponent } from './udgar-live/udgar-live.component';
 // import { DataService } from "./udgaar/data.service";
 
 const routes: Routes = [
@@ -117,6 +119,8 @@ const routes: Routes = [
   { path: "udgaar", component: UdgaarComponent },
   { path: "college-home", component: CollegeHomeComponent },
   { path: "LoginComponent", component: LoginComponent},
+  { path: "DUActivitiesComponent", component: DUActivitiesComponent},
+  { path: "UdgarLive", component: UdgarLiveComponent},
   { path: "**", redirectTo: "home", pathMatch: "full" }
 ];
 
@@ -195,6 +199,8 @@ const routes: Routes = [
     UdgaarComponent,
     CollegeHomeComponent,
     LoginComponent,
+    DUActivitiesComponent,
+    UdgarLiveComponent
   ],
   imports: [
     BrowserModule,
