@@ -35,7 +35,7 @@ export class UdgaarComponent implements OnInit {
     this.http.post("http://localhost:3000/lokesh", bodyData, {responseType: 'text'}).subscribe((resultData: any)=> {
       console.log(resultData);
       alert("Registered Successfully");
-      window.location.href = 'https://rzp.io/l/Umangreg';
+      window.location.href = 'https://rzp.io/l/UDGAAR';
     }, (error: any) => {
       console.log(bodyData);
       console.error(error);
