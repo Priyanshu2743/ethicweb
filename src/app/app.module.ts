@@ -83,7 +83,29 @@ import { CollegeHomeComponent } from './college-home/college-home.component';
 import { LoginComponent } from './login/login.component';
 import { DUActivitiesComponent } from './du-activities/du-activities.component';
 import { UdgarLiveComponent } from './udgar-live/udgar-live.component';
+import { CommonModule } from '@angular/common';
+import { RouteReuseStrategy, ActivatedRouteSnapshot, DetachedRouteHandle } from '@angular/router';
 // import { DataService } from "./udgaar/data.service";
+
+export class CustomReuseStrategy implements RouteReuseStrategy {
+  shouldDetach(route: ActivatedRouteSnapshot): boolean {
+    return false;
+  }
+
+  store(route: ActivatedRouteSnapshot, handle: DetachedRouteHandle | null): void {}
+
+  shouldAttach(route: ActivatedRouteSnapshot): boolean {
+    return false;
+  }
+
+  retrieve(route: ActivatedRouteSnapshot): DetachedRouteHandle | null {
+    return null;
+  }
+
+  shouldReuseRoute(future: ActivatedRouteSnapshot, curr: ActivatedRouteSnapshot): boolean {
+    return future.routeConfig === curr.routeConfig;
+  }
+}
 
 const routes: Routes = [
   { path: "home", component: HomePageComponent },
@@ -204,13 +226,14 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     NgsRevealModule,
     RouterModule.forRoot(routes, { useHash: true }),
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
   ],
-  providers: [Authenticate,AuthGaurd,AuthDeGaurd],
+  providers: [Authenticate,AuthGaurd,AuthDeGaurd, { provide: RouteReuseStrategy, useClass: CustomReuseStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
