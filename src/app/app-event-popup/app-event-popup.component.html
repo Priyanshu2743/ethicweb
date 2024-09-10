@@ -1,0 +1,10 @@
+<div class="popup-overlay" *ngIf="isVisible">
+  <div class="popup">
+    <a href="#" class="btn btn_live">Live<span class="live-icon"></span></a>
+    <button class="close-btn" (click)="closePopup()">✕</button>
+    <img src="../../assets/img/udgaar/udgaar3.jpg" alt="Event Image" class="event-image">
+    <h2>Event Registration</h2>
+    <p>Join our exciting upcoming event! Don't miss the chance to register.</p>
+    <a routerLink="/UdgarLive"><button class="register-btn">Register Now</button></a>
+  </div>
+</div>

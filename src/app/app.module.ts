@@ -85,6 +85,7 @@ import { DUActivitiesComponent } from './du-activities/du-activities.component';
 import { UdgarLiveComponent } from './udgar-live/udgar-live.component';
 import { CommonModule } from '@angular/common';
 import { RouteReuseStrategy, ActivatedRouteSnapshot, DetachedRouteHandle } from '@angular/router';
+import { AppEventPopupComponent } from './app-event-popup/app-event-popup.component';
 // import { DataService } from "./udgaar/data.service";
 
 export class CustomReuseStrategy implements RouteReuseStrategy {
@@ -222,7 +223,8 @@ const routes: Routes = [
     CollegeHomeComponent,
     LoginComponent,
     DUActivitiesComponent,
-    UdgarLiveComponent
+    UdgarLiveComponent,
+    AppEventPopupComponent
   ],
   imports: [
     BrowserModule,

@@ -105,7 +105,7 @@ header h1 {
 
 #about .w3-col {
   flex: 1;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 20px;
 }
 
@@ -117,7 +117,8 @@ header h1 {
 
 #about h1 {
   font-family: "Merriweather", serif;
-  font-size: 36px;
+  font-size: 40px;  
+  font-weight: bolder;
   color: #222;
   text-align: center;
   margin-bottom: 10px;
@@ -126,7 +127,8 @@ header h1 {
 #about h4 {
   font-family: "Lora", serif;
   font-size: 24px;
-  color: #555;
+  font-weight: 600;
+  color: #898989;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -178,56 +180,6 @@ header h1 {
   color: #777;
   margin-bottom: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* Contact Section */
-#contact {
-  padding: 40px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-bottom: 40px auto;
-}
-
-#contact h1 {
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 36px;
-  color: #333;
-  margin: 10px;
-}
-
-#contact p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-#contact form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-#contact form input,
-#contact form button {
-  width: 100%;
-  padding: 16px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-#contact form button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-#contact form button:hover {
-  background-color: #555;
-  transform: translateY(-2px);
 }
 
 /* Testimonials Section */
@@ -289,26 +241,6 @@ button:hover,
   transition: transform 0.3s;
 }
 
-/* Footer */
-footer {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f1f1f1;
-  text-align: center;
-}
-
-footer a {
-  color: #009688;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: #00695c;
-}
-
 /* Gallery Section */
 .gallery {
   padding: 60px 20px 120px;
@@ -352,7 +284,6 @@ footer a:hover {
   }
 
   #about h1,
-  #contact h1,
   .testimonials h2 {
     font-size: 28px;
   }
@@ -366,14 +297,12 @@ footer a:hover {
 @media (max-width: 1200px) {
   #about,
   #menu,
-  #contact,
   .testimonials {
     padding: 30px;
   }
 
   #about h1,
-  #menu h1,
-  #contact h1 {
+  #menu h1{
     font-size: 2.5rem;
   }
 
@@ -390,8 +319,7 @@ footer a:hover {
 
 @media (max-width: 992px) {
   #about,
-  #menu,
-  #contact {
+  #menu{
     flex-direction: column;
   }
 
@@ -403,8 +331,7 @@ footer a:hover {
   }
 
   #about h1,
-  #menu h1,
-  #contact h1 {
+  #menu h1{
     font-size: 2rem;
   }
 
@@ -418,9 +345,12 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  #about {
+    padding: 10px;
+  }
+
   #about h1,
-  #menu h1,
-  #contact h1 {
+  #menu h1{
     font-size: 1.75rem;
   }
 
@@ -428,15 +358,11 @@ footer a:hover {
   #menu h4,
   .testimonials h4 {
     font-size: 1.15rem;
+    margin-bottom: 0;
   }
 
   .testimonials h2 {
     font-size: 1.5rem;
-  }
-
-  #contact form input,
-  #contact form button {
-    font-size: 0.9rem;
   }
 
   .gallery .gallery-list {
@@ -454,8 +380,7 @@ footer a:hover {
   }
 
   #about h1,
-  #menu h1,
-  #contact h1 {
+  #menu h1{
     font-size: 1.5rem;
   }
 
@@ -471,12 +396,6 @@ footer a:hover {
 
   .gallery .gallery-list {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  #contact form input,
-  #contact form button {
-    padding: 14px;
-    font-size: 0.8rem;
   }
 
   .container {
@@ -495,8 +414,7 @@ footer a:hover {
   }
 
   #about h1,
-  #menu h1,
-  #contact h1 {
+  #menu h1 {
     font-size: 4rem;
   }
 
@@ -504,6 +422,11 @@ footer a:hover {
   #menu h4,
   .testimonials h4 {
     font-size: 1.75rem;
+  }
+
+  .testimonials {
+    margin: 40px 0;
+    max-width: 100%;
   }
 
   #about .w3-large{
@@ -518,11 +441,6 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
-  #contact form input,
-  #contact form button {
-    padding: 14px;
-    font-size: 1.25rem;
-  }
 }
 
 /* Promo Section Styling */
@@ -543,7 +461,7 @@ footer a:hover {
   font-size: larger;
   font-weight: bold;
   padding: 16px 50px;
-  background-color: #ff6f61;
+  background-color: #092ad2c0;
   color: #fff;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
