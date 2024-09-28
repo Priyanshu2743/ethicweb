@@ -152,6 +152,12 @@ header h1 {
   margin: 40px auto;
 }
 
+#menu .w3-image{
+  width:40%;
+  height: auto;
+  border-radius: 10px;
+}
+
 #menu .w3-col {
   flex: 1; 
   padding: 20px;
@@ -164,7 +170,6 @@ header h1 {
   font-size: 4.5rem;
   color: #333;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 #menu h4 {
@@ -241,10 +246,81 @@ button:hover,
   transition: transform 0.3s;
 }
 
+/* Quiz-Prizes Section */
+#quiz-prizes {
+  max-width:100%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-prizes h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #333;
+  margin:0 0 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#quiz-prizes .quiz-prizes-img{
+  width:80%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0 ;
+  align-items: center;
+}
+
+.quiz-prize-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quiz-prize-column {
+  flex: 1;
+}
+
+.quiz-prize-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-prizes-img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.testimonial-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* Gallery Section */
 .gallery {
   padding: 60px 20px 120px;
   text-align: center;
+}
+
+.gallery .section-title{
+  margin: 2rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .gallery .gallery-list {
@@ -264,7 +340,7 @@ button:hover,
   height: 200px; /* Fixed height for uniformity */
   object-fit: cover;
   cursor: zoom-in;
-  border-radius: var(--border-radius-s);
+  border-radius: 8px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -273,26 +349,6 @@ button:hover,
 }
 
 /* Adjustments for responsiveness */
-@media screen and (max-width: 768px) {
-  #about,
-  #menu {
-    flex-direction: column;
-  }
-
-  header h1 {
-    font-size: 32px;
-  }
-
-  #about h1,
-  .testimonials h2 {
-    font-size: 28px;
-  }
-
-  #menu h1 {
-    font-size: 3rem;
-  }
-}
-
 /* Media Queries */
 @media (max-width: 1200px) {
   #about,
@@ -303,17 +359,17 @@ button:hover,
 
   #about h1,
   #menu h1{
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 
   #about h4,
   #menu h4,
   .testimonials h4 {
-    font-size: 1.25rem;
+    font-size: 2.5rem;
   }
 
   .testimonials h2 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
@@ -332,37 +388,80 @@ button:hover,
 
   #about h1,
   #menu h1{
-    font-size: 2rem;
-  }
-
-  .testimonials h2 {
-    font-size: 1.75rem;
-  }
-
-  .gallery .gallery-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  #about {
-    padding: 10px;
-  }
-
-  #about h1,
-  #menu h1{
-    font-size: 1.75rem;
+    font-size: 5.5rem;
   }
 
   #about h4,
   #menu h4,
   .testimonials h4 {
-    font-size: 1.15rem;
+    font-size: 3rem;
     margin-bottom: 0;
   }
 
   .testimonials h2 {
-    font-size: 1.5rem;
+    font-size: 3.75rem;
+  }
+
+  #quiz-prizes {
+    .quiz-prize-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .quiz-prize-column {
+      flex: 1;
+    }
+    
+    .quiz-prize-row {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .gallery .gallery-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 10px;
+  }
+  
+  #about,
+  #menu {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .testimonials h2 {
+    font-size: 3rem;
+  }
+
+  #menu h1 {
+    font-size: 3rem;
+  }
+
+  #about h1,
+  #menu h1{
+    font-size: 5rem;
+  }
+
+  #menu .w3-image{
+    width: 100%;
+    margin-bottom: 2.5rem;
+   
+  }
+
+  #about h4,
+  #menu h4,
+  .testimonials h4 {
+    font-size: 3rem;
+    margin-bottom: 0;
   }
 
   .gallery .gallery-list {
@@ -370,9 +469,14 @@ button:hover,
   }
 }
 
+
 @media (max-width: 576px) {
   body {
     padding: 0 10px;
+  }
+  
+  .container {
+    width: 90%;
   }
 
   header h1 {
@@ -381,13 +485,13 @@ button:hover,
 
   #about h1,
   #menu h1{
-    font-size: 1.5rem;
+    font-size: 4.5rem;
   }
 
   #about h4,
   #menu h4,
   .testimonials h4 {
-    font-size: 1rem;
+    font-size: 3rem;
   }
 
   .testimonials h2 {
@@ -396,10 +500,6 @@ button:hover,
 
   .gallery .gallery-list {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .container {
-    width: 90%;
   }
 }
 
@@ -475,12 +575,6 @@ button:hover,
   box-shadow: 0 8px 20px rgba(255, 111, 97, 0.6);
 }
 
-.promo-content {
-  /* flex: 1; */
-  max-width: 100%;
-  /* padding-right: 20px; */
-}
-
 .promo-section {
   display: flex;
   align-items: center;
@@ -492,6 +586,25 @@ button:hover,
   margin: 20px 0;
 }
 
+.promo-image {
+  flex: 1;
+  max-width: 45%;
+  padding-left: 20px;
+}
+
+.promo-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 .promo-content {
   flex: 1;
   max-width: 50%;
@@ -501,6 +614,7 @@ button:hover,
 .promo-content h3 {
   font-family:'Times New Roman', Times, serif;
   font-size: 2.8rem;
+  font-weight: 700;
   color: #333;
   margin-bottom: 5px;
   letter-spacing: 1.5px;
@@ -534,24 +648,6 @@ button:hover,
   box-shadow: 0 8px 20px rgba(255, 111, 97, 0.6);
 }
 
-.promo-image {
-  flex: 1;
-  max-width: 45%;
-  padding-left: 20px;
-}
-
-.promo-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.promo-image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
@@ -560,6 +656,10 @@ button:hover,
     padding: 20px;
   }
 
+  .promo-image img{
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
   .promo-content,
   .promo-image {
     max-width: 100%;
@@ -572,14 +672,16 @@ button:hover,
   }
 
   .promo-content h3 {
-    font-size: 2.4rem;
+    font-size: 3.8rem;
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
   .promo-content p {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .promo-image img {
-    border-radius: 10px;
+    
   }
 }
