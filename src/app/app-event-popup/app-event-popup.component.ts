@@ -1,24 +1,33 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-event-popup',
   templateUrl: './app-event-popup.component.html',
   styleUrls: ['./app-event-popup.component.css']
 })
-export class AppEventPopupComponent {
-  isVisible: boolean = false; // Initialize the popup visibility
+export class AppEventPopupComponent implements AfterViewInit {
+  isVisible: boolean = true; // Initialize the popup visibility
+  sliderHeight: number = 0;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void { // Return type must be 'void'
-    const sliderElement = document.querySelector('app-home-slider'); // Ensure selector is valid
-    const sliderHeight = sliderElement ? sliderElement.getBoundingClientRect().bottom : 0;
+  // @ViewChild('homeSlider', { static: false }) homeSlider!: ElementRef;
 
-    // Check if the scroll passed the bottom of the slider component
-    if (window.pageYOffset > sliderHeight) {
-      this.isVisible = true; // Show popup
-    } else {
-      this.isVisible = false; // Hide popup if scrolled back up
-    }
+  ngAfterViewInit(): void {
+    this.updateSliderHeight(); // Set the sliderHeight after the view is initialized
+  }
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll(): void { 
+  //   if (window.pageYOffset > this.sliderHeight) {
+  //     this.isVisible = true; // Show popup
+  //   } else {
+  //     this.isVisible = false; // Hide popup if scrolled back up
+  //   }
+  // }
+
+  updateSliderHeight(): void {
+    // if (this.homeSlider) {
+    //   this.sliderHeight = this.homeSlider.nativeElement.getBoundingClientRect().bottom;
+    // }
   }
 
   closePopup(): void {

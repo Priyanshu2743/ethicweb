@@ -140,6 +140,13 @@ header h1 {
   line-height: 1.8;
 }
 
+.register-description{
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: -180px;
+  font-size: 14px;
+}
+
 /* Menu Section */
 #menu {
   display: flex;
@@ -501,6 +508,10 @@ button:hover,
   .gallery .gallery-list {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+
+  .promo-button{
+    margin: 20px;
+  }
 }
 
 /* Additional Responsive Adjustments */
@@ -532,6 +543,11 @@ button:hover,
   #about .w3-large{
     font-size: 1.25rem;
   }
+
+  .heading-register .Register-btn{
+    padding: 20px 30px;
+  }
+
   .testimonials h2 {
     font-size: 3rem;
     font-weight: bolder;
@@ -646,6 +662,10 @@ button:hover,
   background-color: #e55a4f;
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(255, 111, 97, 0.6);
+}
+
+.btn-container{
+  margin: 30px 0;
 }
 
 
